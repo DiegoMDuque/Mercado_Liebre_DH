@@ -1,8 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* 
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+
+Tipografías
+Familia: 'Roboto'
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+
+
+
+*/
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Roboto';
+    font-size: 12px;
+}
+
+/* Estilos del HEADER */
+
+header {
+    background-color: #EAC926;
+}
+
+header .hamburger-menu {
+    display: block;
+    text-align: center;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 2px;
+    width: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+
+header nav .ul-inicial {
+    display: block;
+    padding-top: 20px;
+}
+
+header nav .ul-end {
+    display: block;
+    padding-top: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos del FOOTER */
+
+footer section {
+    text-align: center;
+    padding: 10px;
+}
+
+footer section i {
+    color:  #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer section .copyright{
+    text-align: left;
 }
