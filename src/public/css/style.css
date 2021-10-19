@@ -19,9 +19,6 @@ Precios: 18px
 Descuentos: 16px
 Descripciones: 16px
 
-
-
-
 */
 
 * {
@@ -38,6 +35,11 @@ header {
     background-color: #EAC926;
 }
 
+header div .logo {
+    width: 40%;
+    padding: 20px;
+}
+
 header div p {
     text-align: center;
     padding: 5px;
@@ -45,22 +47,32 @@ header div p {
 
 header div .form {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header div div .seach-input {
+    width: 40%;
+    height: 20px;
+    margin-left: 10px;
 }
 
 header div div .seach-bottom {
+    margin: 10px;
     width: 40px;
 }
 
+header .nav-bar {
+    display: none;
+}
+
 header .hamburger-menu {
-    display: block;
     text-align: center;
     background-color: #1259c3;
     color: white;
     border-radius: 2px;
     width: 20px;
     padding: 3px;
-    margin: 3px;
+    margin: auto;
 }
 
 header nav .ul-inicial {
@@ -84,10 +96,51 @@ header nav ul li a {
 
 /* Estilos del MAIN */
 
-main section article img {
+main {
+    background-color: #ebebeb;
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+}
+
+section h3 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+    color: #666;
+}
+
+section div article {
+    margin-bottom: 10px;    
+}
+
+section div article .main-article {
+    background-color: white;
+    padding: 2px;
+    border-top: 1px solid #ebebeb;
+    text-align: left;
+}
+
+section article img {
     width: 80%;
 }
 
+section div article i {
+    border: #39b54a 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    color: #39b54a;
+    margin-bottom: 5px;
+}
+
+section div article div .discount {
+    color: #39b54a;
+    margin-bottom: 10px;
+}
+
+section div article div .description {
+    display: none;
+}
 /* Estilos del FOOTER */
 
 footer section {
@@ -103,4 +156,28 @@ footer section i {
 
 footer section .copyright{
     text-align: left;
+}
+
+@media (min-width: 481px) {
+    header .nav-bar {
+        display: block;
+    }
+
+    header .hamburger-menu {
+        display: none;
+    }
+
+    section div article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }       
+    
+    section div article div .description {
+        display: block;
+    }
+}
+
+@media (min-width: 1280) {
+    section div article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
 }
