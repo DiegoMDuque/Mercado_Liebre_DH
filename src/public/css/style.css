@@ -29,13 +29,21 @@ Descripciones: 16px
     font-size: 12px;
 }
 
+img {
+    max-width: 80vw;
+}
+
 /* Estilos del HEADER */
 
 header {
     background-color: #EAC926;
+    position: fixed;
+    width: 100vw;
+    top: 0;    
+    z-index: 100;
 }
 
-header div .logo {
+.logo {
     width: 40%;
     padding: 20px;
 }
@@ -45,18 +53,17 @@ header div p {
     padding: 5px;
 }
 
-header div .form {
-    display: flex;
-    justify-content: flex-start;
+form {
+    margin: auto;
 }
 
-header div div .seach-input {
-    width: 40%;
+.seach-input {
+    width: 50vw;
     height: 20px;
-    margin-left: 10px;
+    margin-left: 10px;    
 }
 
-header div div .seach-bottom {
+.seach-bottom {
     margin: 10px;
     width: 40px;
 }
@@ -73,6 +80,7 @@ header .hamburger-menu {
     width: 20px;
     padding: 3px;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 header nav .ul-inicial {
@@ -90,17 +98,61 @@ header nav ul li a {
     color: black;
 }
 
+.banner {
+    width: 100%;
+    height: 100%;
+    margin-top: 160px;
+}
 .banner img {
-    width: 100vw;
+    width: 100%;
 }
 
 /* Estilos del MAIN */
 
 main {
     background-color: #ebebeb;
+    height: 100vh;
+}
+
+.last-visits, .offers {
     width: 90vw;
-    text-align: center;
     margin: auto;
+}
+
+.products {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+.products article {
+    box-shadow: -2px 3px 8px 1px rgba(0,0,0,0.85);
+}
+
+.products img {
+    max-width: 80%;
+    margin: auto;
+}
+
+.main-article {
+    position: relative;
+}
+
+.main-article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    border: #39b54a 1px solid;
+    color: #39b54a;
+    margin-bottom: 5px;
 }
 
 section h3 {
@@ -110,40 +162,26 @@ section h3 {
     color: #666;
 }
 
-section div article {
-    margin-bottom: 10px;    
-}
-
-section div article .main-article {
+.main-article {
     background-color: white;
     padding: 2px;
     border-top: 1px solid #ebebeb;
-    text-align: left;
 }
 
-section article img {
-    width: 80%;
-}
-
-section div article i {
-    border: #39b54a 1px solid;
-    border-radius: 50%;
-    padding: 10px;
-    color: #39b54a;
-    margin-bottom: 5px;
-}
-
-section div article div .discount {
+.discount {
     color: #39b54a;
     margin-bottom: 10px;
 }
 
-section div article div .description {
+.description {
     display: none;
 }
 /* Estilos del FOOTER */
+footer {
+    margin-top: 200px;
+}
 
-footer section {
+footer section {    
     text-align: center;
     padding: 10px;
 }
@@ -159,6 +197,9 @@ footer section .copyright{
 }
 
 @media (min-width: 481px) {
+    .header-complete {
+        padding-bottom: 10px;
+    }
     header .nav-bar {
         display: block;
     }
@@ -174,6 +215,11 @@ footer section .copyright{
     section div article div .description {
         display: block;
     }
+
+    .banner {
+        margin-top:310px;
+    }
+    
 }
 
 @media (min-width: 1280) {
