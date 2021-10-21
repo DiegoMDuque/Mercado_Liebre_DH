@@ -29,7 +29,9 @@ Descripciones: 16px
     font-size: 12px;
 }
 
-/* Estilos del HEADER */
+/* '''''''''''''''''''''''''''''''''''''INDEX''''''''''''''''''''''''''''''''''''' */
+
+/* HEADER */
 
 header {
     background-color: #EAC926;
@@ -123,7 +125,7 @@ header nav ul li a {
     width: 100vw;
 }
 
-/* Estilos del MAIN */
+/* MAIN */
 
 main {
     background-color: #ebebeb;
@@ -202,7 +204,7 @@ section h3 {
 .description {
     display: none;
 }
-/* Estilos del FOOTER */
+/* FOOTER */
 
 footer section {    
     text-align: center;
@@ -223,6 +225,53 @@ footer h3 {
 footer section .copyright{
     padding-top: 10px;
     text-align: left;
+}
+
+/* '''''''''''''''''''''''''''''''''''''LOGIN''''''''''''''''''''''''''''''''''''' */
+
+
+
+/* '''''''''''''''''''''''''''''''''''''REGISTER''''''''''''''''''''''''''''''''''''' */
+
+.main-register {
+    background-color: #ebebeb;
+    width: 100vw;
+}
+
+.form-register ul {
+    list-style: none;
+}
+
+.form-register ul input {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.control-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    font-size: 14px;
+}
+
+.form-register {
+    font-size: 14px;
+    margin: 4px;
+}
+
+.form-register label {
+    font-size: 14px;
+}
+
+.form-register input {
+    padding: 15px;
+    margin: 10px;
+}
+
+.type-user {
+    margin: 10px;
+    padding: 20px;
 }
 
 @media (min-width: 481px) {
@@ -289,6 +338,7 @@ footer section .copyright{
     .description {
         display: block;
     }
+
 }
 
 @media (min-width: 1280) {
