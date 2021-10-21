@@ -412,6 +412,17 @@ footer section .copyright{
         flex-wrap: wrap;
     }
 
+    .products article{
+        width: 45%;
+    }
+
+    .products {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     .footer-card {
         width: 32%;
     }
@@ -431,8 +442,16 @@ footer section .copyright{
     }
 }
 
-@media (min-width: 1280) {
+@media (min-width: 1280px) {
     section div article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }    
+
+    .products article{
+        width: 30%;
+    }
+
+    .products {        
+        justify-content: space-between;
+    }
 }
