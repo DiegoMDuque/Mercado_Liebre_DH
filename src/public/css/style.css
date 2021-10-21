@@ -34,11 +34,29 @@ Descripciones: 16px
 header {
     background-color: #EAC926;
     width: 100vw;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.hearder-top {
+    padding-bottom: 10px;
+}
+
+.hearder-first {
+    border: blue solid 3px;
+    display: flex;
+    justify-content: center;
 }
 
 .logo {
-    width: 40%;
-    padding: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    height: auto;
 }
 
 header div p {
@@ -46,42 +64,30 @@ header div p {
     padding: 5px;
 }
 
-form {
-    margin: auto;
-}
-
-.seach-input {
-    width: 50vw;
-    height: 20px;
-    margin-left: 10px;    
-}
-
-.seach-bottom {
-    margin: 10px;
-    width: 40px;
-}
-
-header .nav-bar {
+.nav-bar {
     display: none;
 }
 
-header .hamburger-menu {
+.hamburger-menu {
     text-align: center;
     background-color: #1259c3;
     color: white;
     border-radius: 2px;
-    width: 20px;
-    padding: 3px;
+    width: 35px;
+    height: 35px;
     margin: auto;
-    margin-bottom: 10px;
+    padding: 5px;
 }
 
-header nav .ul-inicial {
+.hamburger-menu i {
+    font-size: 1.5em;
+}
+.ul-inicial {
     display: block;
     padding-top: 20px;
 }
 
-header nav .ul-end {
+.ul-end {
     display: block;
     padding-top: 20px;
 }
@@ -91,45 +97,41 @@ header nav ul li a {
     color: black;
 }
 
-.banner {
-    width: 100%;
-    height: 100%;
-}
 .banner img {
-    width: 100%;
+    width: 100vw;
 }
 
 /* Estilos del MAIN */
 
 main {
     background-color: #ebebeb;
-}
-
-.last-visits, .offers {
+    padding-bottom: 10px;
     width: 90vw;
     margin: auto;
 }
 
-.products {
+.last-visits, .offers {
     width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: auto;
-    background-color: white;
 }
 
-.products article {
+.products article { 
+    background-color: white;   
+    padding: 5%;
     box-shadow: -2px 3px 8px 1px rgba(0,0,0,0.85);
+    margin-bottom: 10px;
 }
 
-.products img {
-    max-width: 80%;
+.products img {     
+    width: 80%;
 }
-
- main {
-    padding-bottom: 10px;
- }
 
 .main-article {
     position: relative;
+    padding: 15px;
 }
 
 .main-article i {
@@ -160,11 +162,19 @@ section h3 {
     background-color: white;
     padding: 2px;
     border-top: 1px solid #ebebeb;
+    display: flex;
+}
+
+.price {
+    width: 30%;
+    padding-top: 10px;
 }
 
 .discount {
     color: #39b54a;
     margin-bottom: 10px;
+    width: 70%;
+    padding-top: 10px;
 }
 
 .description {
@@ -174,7 +184,8 @@ section h3 {
 
 footer section {    
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 7px;
 }
 
 footer section i {
@@ -183,38 +194,33 @@ footer section i {
     margin-bottom: 10px;
 }
 
+footer h3 {
+    text-align: center;
+}
+
 footer section .copyright{
+    padding-top: 10px;
     text-align: left;
 }
 
 @media (min-width: 481px) {
-    .header-complete {
-        padding-bottom: 10px;
-    }
     header .nav-bar {
         display: block;
     }
 
-    header .hamburger-menu {
+    .hamburger-menu {
         display: none;
     }
-
-    section div article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }       
     
-    section div article div .description {
+    .description {
         display: block;
     }
-
-    .banner {
-        margin-top:310px;
-    }
-    
 }
 
 @media (min-width: 1280) {
     section div article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }    
+
+
 }
