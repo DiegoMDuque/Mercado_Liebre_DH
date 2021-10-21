@@ -406,6 +406,28 @@ footer section .copyright{
 
     .description {
         display: block;
+        align-self: center;
+        margin-right: 50px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer-card {
+        width: 32%;
+    }
+
+    .footer-gift {
+        width: 32%;
+    }
+
+    .footer-shield {
+        width: 32%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
     }
 }
 
@@ -413,6 +435,4 @@ footer section .copyright{
     section div article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }    
-
-
 }
