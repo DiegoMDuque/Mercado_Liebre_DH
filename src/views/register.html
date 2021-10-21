@@ -69,42 +69,42 @@
 
                 <input type="text" name="user" class="control" placeholder="Dirección">
 
-                <label class="">Fecha de nacimiento:</label>
-                <input type="date" name="date" value="dd/mm/aaaa" class="control">
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="date" value="dd/mm/aaaa" class="date-bird">
 
-            <div class="type-user">
-                <label>Perfil de usuario:</label>
-                <br>
-                <label><input type="radio" name="vender" aria-selected="true">Vender</label>
-                <label><input type="radio" name="comprar">Comprar</label>
-            </div>        
+                <div class="type-user">
+                    <label>Perfil de usuario:</label>
+                    <br>
+                    <label><input type="radio" name="type-user" value="sell">Vender</label>
+                    <label><input type="radio" name="type-user" checked value="buy">Comprar</label>
+                </div>
 
-                <ul>
-                    <li> <label for="categoria de interes">Intereses</label>
-                    <li> <input type="checkbox" name="categoriadeinteres" value="Electro">Electro</li>
-                    <li> <input type="checkbox" name="categoriadeinteres" value="Moda">Moda</li>
-                    <li> <input type="checkbox" name="categoriadeinteres" value="Hogar">Hogar</li>
-                    <li> <input type="checkbox" name="categoriadeinteres" value="Jugueteria">Jugueteria</li>
-                    <li> <input type="checkbox" name="categoriadeinteres" value="VidaSana">Vida Sana</li>
-                </ul>
-
-
+                <div class="categories">
+                    <ul>
+                        <li> <label for="categoria de interes">Intereses</label>
+                        <li> <input type="checkbox" name="categoriadeinteres" value="Electro">Electro</li>
+                        <li> <input type="checkbox" name="categoriadeinteres" value="Moda">Moda</li>
+                        <li> <input type="checkbox" name="categoriadeinteres" value="Hogar">Hogar</li>
+                        <li> <input type="checkbox" name="categoriadeinteres" value="Jugueteria">Jugueteria</li>
+                        <li> <input type="checkbox" name="categoriadeinteres" value="VidaSana">Vida Sana</li>
+                    </ul>
+                </div>
 
                 <label>Foto de usuario</label>
                 <input type="file" name="photo" accept=".jpg">
 
+                <div class="passwords">
+                    <label id="password">Contraseña:</label>
+                    <input type="password" name="contrasena" class="control" id="password">
+                    <br>
+                    <label id="secondpassword">Confirmar contraseña:</label>
+                    <input type="password" name="confirmar" class="control" id="secondpassword">
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="button-form">Enviar</button>
+                    <button type="reset" class="button-form">Borrar</button>
+                </div>
 
-
-                <label>Contraseña</label>
-                <input type="password" name="contrasena" class="control">
-
-
-                <label>Confirmar contraseña</label>
-                <input type="password" name="confirmar" class="control">
-
-
-                <button type="submit" class="button-form">Enviar</button>
-                <button type="reset" class="button-form">Borrar</button>
             </div>
 
         </form>

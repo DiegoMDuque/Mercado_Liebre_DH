@@ -242,9 +242,14 @@ footer section .copyright{
     list-style: none;
 }
 
-.form-register ul input {
+.categories input {
     margin: 10px;
     margin-left: 20px;
+    font-size: 14px;
+}
+
+.categories {
+    margin-bottom: 15px;
 }
 
 .control-form {
@@ -270,8 +275,32 @@ footer section .copyright{
 }
 
 .type-user {
-    margin: 10px;
-    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.date-bird {
+    width: 50%;
+}
+
+.passwords input {
+    height: 10px;
+}
+
+.buttons {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.buttons button {    
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #1259c3;
+    color: #ffffff;
+    border: none;
 }
 
 @media (min-width: 481px) {
@@ -338,7 +367,6 @@ footer section .copyright{
     .description {
         display: block;
     }
-
 }
 
 @media (min-width: 1280) {
