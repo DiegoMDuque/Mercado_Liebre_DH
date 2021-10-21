@@ -229,7 +229,39 @@ footer section .copyright{
 
 /* '''''''''''''''''''''''''''''''''''''LOGIN''''''''''''''''''''''''''''''''''''' */
 
+.main-login {
+    background-color: #ebebeb;
+    width: 100vw;
+}
 
+.form-login {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.form-login label {
+    font-size: 14px;
+}
+
+.form-login input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.form-login ul {
+    list-style: none;
+}
+
+.button-login {   
+    border: red solid 2px;    
+    margin: auto;
+    padding: 8px;
+    background-color: #1259c3;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border: none;
+    width: 40%;
+}
 
 /* '''''''''''''''''''''''''''''''''''''REGISTER''''''''''''''''''''''''''''''''''''' */
 
@@ -296,6 +328,14 @@ footer section .copyright{
 }
 
 .buttons button {    
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #1259c3;
+    color: #ffffff;
+    border: none;
+}
+
+.button-login {
     padding: 8px;
     margin-bottom: 10px;
     background-color: #1259c3;
