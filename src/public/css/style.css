@@ -29,18 +29,11 @@ Descripciones: 16px
     font-size: 12px;
 }
 
-img {
-    max-width: 80vw;
-}
-
 /* Estilos del HEADER */
 
 header {
     background-color: #EAC926;
-    position: fixed;
     width: 100vw;
-    top: 0;    
-    z-index: 100;
 }
 
 .logo {
@@ -101,7 +94,6 @@ header nav ul li a {
 .banner {
     width: 100%;
     height: 100%;
-    margin-top: 160px;
 }
 .banner img {
     width: 100%;
@@ -111,7 +103,6 @@ header nav ul li a {
 
 main {
     background-color: #ebebeb;
-    height: 100vh;
 }
 
 .last-visits, .offers {
@@ -131,8 +122,11 @@ main {
 
 .products img {
     max-width: 80%;
-    margin: auto;
 }
+
+ main {
+    padding-bottom: 10px;
+ }
 
 .main-article {
     position: relative;
@@ -177,9 +171,6 @@ section h3 {
     display: none;
 }
 /* Estilos del FOOTER */
-footer {
-    margin-top: 200px;
-}
 
 footer section {    
     text-align: center;
