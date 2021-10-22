@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/94222eaec1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    
+
 </head>
-<header>
-
-    <div class="hearder-top">
-        <div class="hearder-first">
-            <div class="logo">
-
-                <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
-
-            </div>
-
-            <div class="form" action="" method="POST">
-
-                <input class="seach-input" type="seach" name="seach-products"
-                    placeholder=" Buscar productos, marcas y mucho más" id="seach">
-                <button class="seach-bottom" type="submit"> <i class="fa fa-search" id="seach"></i></button>
-
-            </div>
-        </div>
-        
-        <p><i class="fas fa-hand-holding-usd"></i>Compra a cuotas y sin tarjeta de crédito</p>
-    </div>
-
-    <nav class="nav-bar">
-
-        <ul class="ul-inicial">
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Tiendas Oficiales</a></li>
-            <li><a href="#">Vender</a></li>
-            <li><a href="#">Ayuda</a></li>
-        </ul>
-
-        <ul class="ul-end">
-            <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
-            <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
-            <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
-        </ul>
-
-    </nav>
-
-    <div class="hamburger-menu">
-        <i class="fa fa-bars burger"></i>
-    </div>
-
-</header>
 
 <body>
+    <header>
+
+        <div class="hearder-top">
+            <div class="hearder-first">
+                <div class="logo">
+
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+
+                </div>
+
+                <div class="form" action="" method="POST">
+
+                    <input class="seach-input" type="seach" name="seach-products"
+                        placeholder=" Buscar productos, marcas y mucho más" id="seach">
+                    <button class="seach-bottom" type="submit"> <i class="fa fa-search" id="seach"></i></button>
+
+                </div>
+            </div>
+
+            <p><i class="fas fa-hand-holding-usd"></i>Compra a cuotas y sin tarjeta de crédito</p>
+        </div>
+
+        <nav class="nav-bar">
+
+            <ul class="ul-inicial">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="ul-end">
+                <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+
+        </nav>
+
+        <div class="hamburger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+
+    </header>
+
     <main class="main-login">
 
         <form action="/ingress" method="POST" class="form-login">
@@ -64,20 +66,20 @@
                     <input type="text" name="nombredeusuario" id="nombredeusuario">
                     <span class="feedback"></span>
                 </li>
-    
+
                 <li><label for="contrasena">Contraseña:</label>
                     <input type="password" name="contrasena" id="contrasena">
                     <span class="feedback"></span>
                 </li>
             </ul>
 
-                <button type="submit" class="button-login">Enviar</button>      
+            <button type="submit" class="button-login">Enviar</button>
 
         </form>
 
     </main>
 
-    <footer>
+    <footer class="footer-login">
         <section class="footer-card">
             <i class="fas fa-credit-card"></i>
             <h3>Paga con tarjeta o en efectivo</h3>
@@ -99,9 +101,10 @@
                 porque estás siempre protegido.</p>
         </section>
         <section class="footer-copyright">
-                <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
 
     </footer>
 </body>
+
 </html>
