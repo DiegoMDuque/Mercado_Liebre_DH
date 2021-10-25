@@ -464,11 +464,6 @@ footer section .copyright{
     .products {        
         justify-content: space-between;
     }
-
-    .main-article {
-        padding-bottom: 5px;
-    }
-
     .seach-input {
         height: 40px;
     }

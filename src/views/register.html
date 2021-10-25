@@ -19,18 +19,15 @@
         <div class="hearder-top">
             <div class="hearder-first">
                 <div class="logo">
+                    <a href="/">
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
-
-                </div>
-
-                <div class="form" action="" method="POST">
-
-                    <input class="seach-input" type="seach" name="seach-products"
-                        placeholder=" Buscar productos, marcas y mucho más" id="seach">
-                    <button class="seach-bottom" type="submit"> <i class="fa fa-search" id="seach"></i></button>
-
-                </div>
+                </div>               
+                    <form class="form" action="#" method="GET">
+                        <input required class="seach-input" type="seach" name="seach-products"
+                            placeholder=" Buscar productos, marcas y mucho más" id="seach">
+                        <button class="seach-bottom" type="submit"> <i class="fa fa-search" id="seach"></i></button>
+                    </form>               
             </div>
 
             <p><i class="fas fa-hand-holding-usd"></i>Compra a cuotas y sin tarjeta de crédito</p>
@@ -47,7 +44,7 @@
 
             <ul class="ul-end">
                 <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/login">Ingresar<i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
             </ul>
 
@@ -64,21 +61,21 @@
         <form action="/successfulregister" method="POST" class="form-register">
 
             <div class="control-form">
-                <input type="text" name="name" class="control" placeholder="Nombre(s)">
-                <input type="text" name="surname" class="control" placeholder="Apellidos">
+                <input type="text" name="name" required class="control" placeholder="Nombre(s)">
+                <input type="text" name="surname" required class="control" placeholder="Apellidos">
 
-                <input type="text" name="email" class="control" placeholder="Correo electrónico">
+                <input type="text" name="email" required class="control" placeholder="Correo electrónico">
 
-                <input type="text" name="user" class="control" placeholder="Dirección">
+                <input type="text" name="user" required class="control" placeholder="Dirección">
 
                 <label>Fecha de nacimiento:</label>
-                <input type="date" name="date" value="dd/mm/aaaa" class="date-bird">
+                <input type="date" name="date" required value="dd/mm/aaaa" class="date-bird">
 
                 <div class="type-user">
                     <label>Perfil de usuario:</label>
                     <br>
-                    <label><input type="radio" name="type-user" value="sell">Vender</label>
-                    <label><input type="radio" name="type-user" checked value="buy">Comprar</label>
+                    <label><input type="radio" name="type-user" required value="sell">Vender</label>
+                    <label><input type="radio" name="type-user" required checked value="buy">Comprar</label>
                 </div>
 
                 <div class="categories">
@@ -93,14 +90,14 @@
                 </div>
 
                 <label>Foto de usuario</label>
-                <input type="file" name="photo" accept=".jpg">
+                <input type="file" required name="photo" accept=".jpg">
 
                 <div class="passwords">
                     <label id="password">Contraseña:</label>
-                    <input type="password" name="contrasena" class="control" id="password">
+                    <input type="password" required name="contrasena" class="control" id="password">
                     <br>
                     <label id="secondpassword">Confirmar contraseña:</label>
-                    <input type="password" name="confirmar" class="control" id="secondpassword">
+                    <input type="password" required name="confirmar" class="control" id="secondpassword">
                 </div>
                 <div class="buttons">
                     <button type="submit" class="button-form">Enviar</button>
